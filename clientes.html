@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+
+
+        var nome,cpf,email,endereco,numero,estado,cep,telefone;
+        if(typeof(storage) !="undefined"){
+        
+        }else{
+            document.write("");
+        
+        }
+        function gravar(){
+            nome=document.getElementById("nome").value;
+            cpf=document.getElementById("cpf").value;
+            email=document.getElementById("email").value;
+            endereco=document.getElementById("endereco").value;
+            numero=document.getElementById("numero").value;
+            estado=document.getElementById("estado").value;
+            cep=document.getElementById("cep").value;
+            telefone=document.getElementById("telefone").value;
+            
+            localStorage.nome=nome;
+            localStorage.cpf=cpf;
+            localStorage.email=email;
+            localStorage.endereco=endereco;
+            localStorage.numero=numero;
+            localStorage.estado=estado;
+            localStorage.cep=cep;
+            localStorage.telefone=telefone;
+          
+            alert("Brigado, sô.")
+            
+        }
+        
+            </script>
+    <title> Uai Store! - Cadastro</title>
+
+      <title>Document</title>
+</head>
+<header> 
+    <style>
+        a:link {
+                color: #fff;
+                text-decoration: none;
+        }
+        a:visited {
+            color: white;
+        }
+        a:hover {
+            color: rgb(74, 219, 255);
+        }
+        a:active {
+            color: rgb(0, 204, 255);
+        }
+    </style>
+    <div class="menu">
+        <a href="../DESAFIO 3/index.html">
+        Uai Store!        
+    </a>
+    </div>
+    <div class="menu">
+        <a href="../DESAFIO 3/clientes.html">
+        CLIENTES    
+    </a>    
+    </div>
+    <div class="menu">
+        <a href="../DESAFIO 3/produtos.html">
+        PRODUTOS 
+    </a>       
+    </div>
+
+</header>
+<body>
+    <center>
+        <main class="container2">
+            <H1 class="h1">CLIENTES</H1>
+    <form action="">
+        <div class="input-field">
+            <input type="text" name="nome" id="nome" placeholder="Preencha o seu Nome." required>
+            <div class="underline"></div>
+        </div>
+        <div class="input-field">
+            <input type="text" name="cpf" id="cpf" placeholder="Preencha o seu CPF." required>
+            <div class="underline"></div>
+        <div class="input-field">
+            <input type="text" name="email" id="email" placeholder="Preencha o seu e-mail." required>
+            <div class="underline"></div>
+            
+            </div>
+            <div class="input-field">
+                <input type="text" name="endereco" id="endereco" placeholder="Preencha o seu endereço." required>
+                <div class="underline"></div>
+                <div class="input-field">
+
+                    
+                        <input type="number" name="numero" id="numero" placeholder="Número da casa." required>
+                        <div class="underline"></div>
+                        <div class="input-field">
+
+                            <input type="text" name="cidade" id="cidade" placeholder="Preencha com a cidade." required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="text" name="estado" id="estado" placeholder="Preencha o seu estado." required>
+                            <div class="underline"></div>
+
+                            <div class="input-field">                                     
+
+                                <input type="number" name="cep" id="cep" placeholder="Preencha o seu CEP." required>
+                                <div class="underline"></div>
+                                    </div>
+
+
+                            <div class="input-field">
+
+                    <input type="number" name="telefone" id="telefone" placeholder="Preencha o seu telefone." required>
+                    <div class="underline"></div>
+                </div>
+               
+
+                 <input  type="submit" name="botao" id="botao"  onclick="gravar()">
+                
+                 <form action="">
+
+                </center>
+
+    </form>
+    </main>
+    
+</body>
+</html>
